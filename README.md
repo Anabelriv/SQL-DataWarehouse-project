@@ -96,7 +96,7 @@ Significant modifications have been made, including a shift to PostgreSQL SQL di
 ## About the Author
 
 Want to connect with me?  
-[Anabel Rivera]([https://www.linkedin.com/in/your-linkedin-profile/](https://www.linkedin.com/in/anabel-rivera-v/))
+[Anabel Rivera](https://www.linkedin.com/in/anabel-rivera-v/)
 
 ***
 
