@@ -17,12 +17,12 @@ Captures customer attributes, including demographic and location-related informa
 |----------------|-------------|-------------|
 | customer_key   | INT         | Synthetic identifier for each customer entry within the dimension. |
 | customer_id    | INT         | System-generated unique number for each customer. |
-| customer_number| NVARCHAR(50)| An alphanumeric code used to identify and track customers in the system. |
-| first_name     | NVARCHAR(50)| Given name of the customer as stored. |
-| last_name      | NVARCHAR(50)| Family name or surname of the customer. |
-| country        | NVARCHAR(50)| Customer’s country of residence, such as “Australia.” |
-| marital_status | NVARCHAR(50)| Marital status (e.g., “Married”, “Single”). |
-| gender         | NVARCHAR(50)| Indicates gender: “Male”, “Female”, or “n/a”. |
+| customer_number| VARCHAR(50)| An alphanumeric code used to identify and track customers in the system. |
+| first_name     | VARCHAR(50)| Given name of the customer as stored. |
+| last_name      | VARCHAR(50)| Family name or surname of the customer. |
+| country        | VARCHAR(50)| Customer’s country of residence, such as “Australia.” |
+| marital_status | VARCHAR(50)| Marital status (e.g., “Married”, “Single”). |
+| gender         | VARCHAR(50)| Indicates gender: “Male”, “Female”, or “n/a”. |
 | birthdate      | DATE        | Birth date, formatted as YYYY-MM-DD. |
 | create_date    | DATE        | Timestamp when the record was added to the system. |
 
@@ -39,14 +39,14 @@ Holds product metadata and classification details.
 |----------------------|-------------|-------------|
 | product_key          | INT         | Artificial key to identify products in the dimension. |
 | product_id           | INT         | Internal system identifier for the product. |
-| product_number       | NVARCHAR(50)| Structured code used for product referencing and organization. |
-| product_name         | NVARCHAR(50)| Product’s descriptive name, with attributes like color or size. |
-| category_id          | NVARCHAR(50)| ID linking the product to its category. |
-| category             | NVARCHAR(50)| Higher-level grouping for products (e.g., “Bikes”, “Components”). |
-| subcategory          | NVARCHAR(50)| Further breakdown within the category, specifying type or class. |
-| maintenance_required | NVARCHAR(50)| States if the product needs maintenance: “Yes” or “No”. |
+| product_number       | VARCHAR(50)| Structured code used for product referencing and organization. |
+| product_name         | VARCHAR(50)| Product’s descriptive name, with attributes like color or size. |
+| category_id          | VARCHAR(50)| ID linking the product to its category. |
+| category             | VARCHAR(50)| Higher-level grouping for products (e.g., “Bikes”, “Components”). |
+| subcategory          | VARCHAR(50)| Further breakdown within the category, specifying type or class. |
+| maintenance_required | VARCHAR(50)| States if the product needs maintenance: “Yes” or “No”. |
 | cost                 | INT         | Product’s base or listed price. |
-| product_line         | NVARCHAR(50)| Series or range the product belongs to (e.g., “Road”, “Mountain”). |
+| product_line         | VARCHAR(50)| Series or range the product belongs to (e.g., “Road”, “Mountain”). |
 | start_date           | DATE        | Date the item became available or was released for sale. |
 
 ***
@@ -60,7 +60,7 @@ Maintains transactional sales records to support analytics and reporting.
 
 | Field Name    | Data Type    | Explanation |
 |---------------|-------------|-------------|
-| order_number  | NVARCHAR(50)| Unique sales order code (e.g., “SO54496”). |
+| order_number  | VARCHAR(50)| Unique sales order code (e.g., “SO54496”). |
 | product_key   | INT         | Foreign key referencing the product dimension. |
 | customer_key  | INT         | Foreign key referencing the customer dimension. |
 | order_date    | DATE        | When the order was made by the customer. |
