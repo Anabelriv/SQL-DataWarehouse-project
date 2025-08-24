@@ -37,12 +37,9 @@ data-warehouse-project/
 │
 ├── datasets/                   # Raw ERP and CRM sample data (CSV)
 ├── docs/                       # Documentation, models, and diagrams
-│   ├── etl.drawio                  # ETL pipeline visualization
 │   ├── data_architecture.drawio    # Architecture overview
 │   ├── data_catalog.md             # Dataset definitions and metadata
 │   ├── data_flow.drawio            # Data flow diagram
-│   ├── data_models.drawio          # Data models (star schema, etc)
-│   ├── naming-conventions.md       # Naming standards and guidelines
 │
 ├── scripts/                    # SQL ETL and transformation scripts
 │   ├── bronze/                     # Raw data loading
